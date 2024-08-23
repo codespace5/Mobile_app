@@ -1,0 +1,7 @@
+<resources>
+	<string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">9G9ajru3XETug06DMIDvUOl5hYTKTuWN0u4dU</string>
+  <string name="app_name">MTD</string>
+  <string name="facebook_app_id">791422537909958</string>
+  <string name="fb_login_protocol_scheme">fb791422537909958</string>
+  <string name="RNB_GOOGLE_PLAY_LICENSE_KEY">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAufv3Hn2AsYNOt9H5IO2fg6JTRt8J9UwKijpsGcTKMy5ZtCU7d2pw0XK4BJZ6lPEKtSye98G8Bv8ebwNJ+JQZqjI5p9IKQqKO78edigAidaJd5H4/xSOT2EgoPJk73rFxtYD2QfTOGiUrSMzuIX4UxwF3Kx0ca3km+DRcrMdaJN+Gv31SZiUk1eKC4xfHvuECbZLzkLTBUe7WqtPmUj9LMYPSZGAkyHIfCo7i4sJXawBhmfLJ0JpxtMsa+iq12U/T6sMzAnCF5vhfhzidb6kYRsNEV9Kc2OzuJqpZ/Dtofhva4dHzYPdh11NAZFhTyDN3Mmf6JCe7v4ABgRP+ZOUVZQIDAQAB</string>
+</resources>

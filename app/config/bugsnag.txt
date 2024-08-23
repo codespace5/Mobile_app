@@ -1,0 +1,78 @@
+Debug dev source map js
+key : 4d9773ed08d70318fb72ddfc7244d73a
+
+generate 
+ios ==> 
+react-native bundle \
+    --platform ios \
+    --dev true \
+    --entry-file index.js \
+    --bundle-output ios-debug.bundle \
+    --sourcemap-output ios-debug.bundle.map
+
+Android =>
+react-native bundle \
+    --platform android \
+    --dev true \
+    --entry-file index.js \
+    --bundle-output android-debug.bundle \
+    --sourcemap-output android-debug.bundle.map
+
+
+Release source map generate
+iOs
+react-native bundle --platform ios --dev false --entry-file index.js --bundle-output bugsnag/ios-release.bundle --sourcemap-output bugsnag/ios-release.bundle.map
+
+Android => 
+react-native bundle \
+    --platform android \
+    --dev false \
+    --entry-file index.js \
+    --bundle-output bugsnag/android-release.bundle \
+    --sourcemap-output bugsnag/android-release.bundle.map
+
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output bugsnag/android-release.bundle --sourcemap-output bugsnag/android-release.bundle.map
+
+upload
+
+debug
+    iOS ==> 
+    bugsnag-sourcemaps upload \
+    --api-key 4d9773ed08d70318fb72ddfc7244d73a \
+    --app-version 0.0.1 \
+    --minified-file ios-debug.bundle \
+    --source-map ios-debug.bundle.map \
+    --minified-url "http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false"
+
+    Android =>
+    bugsnag-sourcemaps upload \
+    --api-key 4d9773ed08d70318fb72ddfc7244d73a \
+    --app-version 0.0.1 \
+    --minified-file android-debug.bundle \
+    --source-map android-debug.bundle.map \
+    --minified-url "http://10.0.3.2:8081/index.delta?platform=android&dev=true&minify=false"
+
+    release 
+
+    ios => 
+    bugsnag-sourcemaps upload \
+    --api-key 4d9773ed08d70318fb72ddfc7244d73a \
+    --app-version 0.0.1 \
+    --minified-file bugsnag/ios-release.bundle \
+    --source-map bugsnag/ios-release.bundle.map \
+    --minified-url main.jsbundle \
+    --upload-sources
+
+
+    Android => 
+    bugsnag-sourcemaps upload --api-key 4d9773ed08d70318fb72ddfc7244d73a --app-version 0.0.1 --minified-file bugsnag/android-release.bundle --source-map bugsnag/android-release.bundle.map --minified-url index.android.bundle --upload-sources
+
+//Above Code minified here directly Copy Paste in cmd from below For Release
+
+react-native bundle --platform ios --dev false --entry-file index.js --bundle-output bugsnag/ios-release.bundle --sourcemap-output bugsnag/ios-release.bundle.map
+
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output bugsnag/android-release.bundle --sourcemap-output bugsnag/android-release.bundle.map
+
+bugsnag-sourcemaps upload --api-key 4d9773ed08d70318fb72ddfc7244d73a --app-version 0.0.1 --minified-file bugsnag/ios-release.bundle --source-map bugsnag/ios-release.bundle.map --minified-url main.js bundle --upload-sources
+
+bugsnag-sourcemaps upload --api-key 4d9773ed08d70318fb72ddfc7244d73a --app-version 0.0.1 --minified-file bugsnag/android-release.bundle --source-map bugsnag/android-release.bundle.map --minified-url index.android.bundle --upload-sources

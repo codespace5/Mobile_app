@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "898038960794",
+    "firebase_url": "https://monthly-talent-contest.firebaseio.com",
+    "project_id": "monthly-talent-contest",
+    "storage_bucket": "monthly-talent-contest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898038960794:android:82b217a3a63ddd23",
+        "android_client_info": {
+          "package_name": "com.mtc.talent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898038960794-1d7q4u0336vefjlb1s0gd1k82rcqvf4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mtc.talent",
+            "certificate_hash": "e8965a4331f71f4c8c0eda409b7179de8321bed5"
+          }
+        },
+        {
+          "client_id": "898038960794-cdeisereb9p49udp3vqv74ltko1fjpfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNq0686cRprB4hjMoNxZZS_uZHXryhzxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898038960794-cdeisereb9p49udp3vqv74ltko1fjpfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

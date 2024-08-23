@@ -1,0 +1,2 @@
+code-push release-react MTC android -m --description "New changes" --deploymentName Production
+code-push release-react MTC-IOS ios -m --description "New changes" --deploymentName Production
